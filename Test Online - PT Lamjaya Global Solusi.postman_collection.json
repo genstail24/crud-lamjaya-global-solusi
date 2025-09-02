@@ -1,0 +1,1021 @@
+{
+	"info": {
+		"_postman_id": "1955110e-7827-4263-bf14-aaebfcfd681f",
+		"name": "Test Online - PT Lamjaya Global Solusi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13675180"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Login",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"admin@example.com\",\r\n    \"password\": \"password\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/auth/login",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"auth",
+								"login"
+							]
+						},
+						"description": "Gets information about the authenticated user."
+					},
+					"response": []
+				},
+				{
+					"name": "Logout",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/auth/logout",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"auth",
+								"logout"
+							]
+						},
+						"description": "Gets information about the authenticated user."
+					},
+					"response": []
+				},
+				{
+					"name": "Get authenticated User",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/auth/user",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"auth",
+								"user"
+							]
+						},
+						"description": "Gets information about the authenticated user."
+					},
+					"response": []
+				}
+			],
+			"description": "The `/me` endpoints let you manage information about the authenticated user."
+		},
+		{
+			"name": "TProvinsi",
+			"item": [
+				{
+					"name": "/t-provinsi -> Get All Province",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"admin@example.com\",\r\n    \"password\": \"password\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/t-provinsi",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"t-provinsi"
+							]
+						},
+						"description": "Gets information about the authenticated user."
+					},
+					"response": []
+				},
+				{
+					"name": "/t-provinsi -> Create Province",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"kode\": \"P001\",\r\n    \"nama\": \"Aceh\",\r\n    \"active\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/t-provinsi",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"t-provinsi"
+							]
+						},
+						"description": "Gets information about the authenticated user."
+					},
+					"response": []
+				},
+				{
+					"name": "/t-provinsi/:id -> Update Province",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"kode\": \"P001\",\r\n    \"nama\": \"Aceh\",\r\n    \"active\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/t-provinsi",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"t-provinsi"
+							]
+						},
+						"description": "Gets information about the authenticated user."
+					},
+					"response": []
+				},
+				{
+					"name": "/t-provinsi/:id -> Get one province",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"admin@example.com\",\r\n    \"password\": \"password\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/t-provinsi/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"t-provinsi",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						},
+						"description": "Gets information about the authenticated user."
+					},
+					"response": []
+				},
+				{
+					"name": "/t-provinsi/:id -> Delete a province",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"admin@example.com\",\r\n    \"password\": \"password\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/t-provinsi/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"t-provinsi",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "3"
+								}
+							]
+						},
+						"description": "Gets information about the authenticated user."
+					},
+					"response": []
+				}
+			],
+			"description": "The `/me` endpoints let you manage information about the authenticated user."
+		},
+		{
+			"name": "TKecamatan",
+			"item": [
+				{
+					"name": "/t-kecamatan-> Get All",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"admin@example.com\",\r\n    \"password\": \"password\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/t-kecamatan",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"t-kecamatan"
+							]
+						},
+						"description": "Gets information about the authenticated user."
+					},
+					"response": []
+				},
+				{
+					"name": "/t-kecamatan-> Create One Item",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"kode\": \"P001\",\r\n    \"nama\": \"Aceh\",\r\n    \"active\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/t-kecamatan",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"t-kecamatan"
+							]
+						},
+						"description": "Gets information about the authenticated user."
+					},
+					"response": []
+				},
+				{
+					"name": "/t-kecamatan/:id -> Update One Item",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"kode\": \"P001\",\r\n    \"nama\": \"Aceh\",\r\n    \"active\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/t-kecamatan",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"t-kecamatan"
+							]
+						},
+						"description": "Gets information about the authenticated user."
+					},
+					"response": []
+				},
+				{
+					"name": "/t-kecamatan/:id -> Get One Item",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"admin@example.com\",\r\n    \"password\": \"password\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/t-provinsi/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"t-provinsi",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						},
+						"description": "Gets information about the authenticated user."
+					},
+					"response": []
+				},
+				{
+					"name": "/t-kecamatan/:id -> Delete an item",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"admin@example.com\",\r\n    \"password\": \"password\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/t-kecamatan/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"t-kecamatan",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "3"
+								}
+							]
+						},
+						"description": "Gets information about the authenticated user."
+					},
+					"response": []
+				}
+			],
+			"description": "The `/me` endpoints let you manage information about the authenticated user."
+		},
+		{
+			"name": "TKelurahan",
+			"item": [
+				{
+					"name": "/t-kelurahan-> Get All",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"admin@example.com\",\r\n    \"password\": \"password\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/t-kelurahan",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"t-kelurahan"
+							]
+						},
+						"description": "Gets information about the authenticated user."
+					},
+					"response": []
+				},
+				{
+					"name": "/t-kelurahan-> Create One Item",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"kode\": \"P001\",\r\n    \"nama\": \"Aceh\",\r\n    \"active\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/t-kecamatan",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"t-kecamatan"
+							]
+						},
+						"description": "Gets information about the authenticated user."
+					},
+					"response": []
+				},
+				{
+					"name": "/t-kelurahan/:id -> Update One Item",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"kode\": \"P001\",\r\n    \"nama\": \"Aceh\",\r\n    \"active\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/t-kelurahan",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"t-kelurahan"
+							]
+						},
+						"description": "Gets information about the authenticated user."
+					},
+					"response": []
+				},
+				{
+					"name": "/t-kelurahan/:id -> Get One Item",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"admin@example.com\",\r\n    \"password\": \"password\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/t-kelurahan/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"t-kelurahan",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						},
+						"description": "Gets information about the authenticated user."
+					},
+					"response": []
+				},
+				{
+					"name": "/t-kelurahan/:id -> Delete an item",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"admin@example.com\",\r\n    \"password\": \"password\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/t-kelurahan/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"t-kelurahan",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "3"
+								}
+							]
+						},
+						"description": "Gets information about the authenticated user."
+					},
+					"response": []
+				}
+			],
+			"description": "The `/me` endpoints let you manage information about the authenticated user."
+		},
+		{
+			"name": "TPegawai",
+			"item": [
+				{
+					"name": "/t-pegawai-> Get All",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"admin@example.com\",\r\n    \"password\": \"password\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/t-pegawai",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"t-pegawai"
+							]
+						},
+						"description": "Gets information about the authenticated user."
+					},
+					"response": []
+				},
+				{
+					"name": "/t-pegawai-> Create One Item",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"kode\": \"P001\",\r\n    \"nama\": \"Aceh\",\r\n    \"active\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/t-pegawai",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"t-pegawai"
+							]
+						},
+						"description": "Gets information about the authenticated user."
+					},
+					"response": []
+				},
+				{
+					"name": "/t-pegawai/:id -> Update One Item",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"kode\": \"P001\",\r\n    \"nama\": \"Aceh\",\r\n    \"active\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/t-pegawai",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"t-pegawai"
+							]
+						},
+						"description": "Gets information about the authenticated user."
+					},
+					"response": []
+				},
+				{
+					"name": "/t-pegawai/:id -> Get One Item",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"admin@example.com\",\r\n    \"password\": \"password\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/t-pegawai/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"t-pegawai",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						},
+						"description": "Gets information about the authenticated user."
+					},
+					"response": []
+				},
+				{
+					"name": "/t-pegawai/:id -> Delete an item",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"admin@example.com\",\r\n    \"password\": \"password\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/t-pegawai/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"t-pegawai",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "3"
+								}
+							]
+						},
+						"description": "Gets information about the authenticated user."
+					},
+					"response": []
+				}
+			],
+			"description": "The `/me` endpoints let you manage information about the authenticated user."
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					"pm.request.headers.add({key: 'accept', value: 'application/json' });"
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:8000/api"
+		}
+	]
+}
